@@ -1,0 +1,66 @@
+[versions]
+agp = "8.5.1"
+kotlin = "1.9.20"
+screenshot = "0.0.1-alpha06"
+coreKtx = "1.13.1"
+junit = "4.13.2"
+junitVersion = "1.2.1"
+espressoCore = "3.6.1"
+lifecycleRuntimeKtx = "2.8.5"
+activityCompose = "1.9.2"
+composeBom = "2024.09.00"
+kotlinCoroutineTest = "1.8.1"
+
+espressoVersion = "3.6.1"
+testRules = "1.6.1"
+testRunner = "1.6.2"
+testTruth = "1.6.0"
+googleTestTruth = "1.1.4"
+mockitoInline = "2.13.0"
+androidxTestCore = "1.6.1"
+coreTesting = "2.2.0"
+testJunitExt = "1.2.1"
+testOrchestrator = "1.5.0"
+mockitoKotlin = "5.1.0"
+mockitoCore = "5.5.0"
+
+
+[libraries]
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+mockito-core = { group = "org.mockito", name = "mockito-core", version.ref = "mockitoCore" }
+androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+androidx-lifecycle-runtime-ktx = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "lifecycleRuntimeKtx" }
+androidx-activity-compose = { group = "androidx.activity", name = "activity-compose", version.ref = "activityCompose" }
+androidx-compose-bom = { group = "androidx.compose", name = "compose-bom", version.ref = "composeBom" }
+androidx-ui = { group = "androidx.compose.ui", name = "ui" }
+androidx-ui-graphics = { group = "androidx.compose.ui", name = "ui-graphics" }
+androidx-ui-tooling = { group = "androidx.compose.ui", name = "ui-tooling" }
+androidx-ui-tooling-preview = { group = "androidx.compose.ui", name = "ui-tooling-preview" }
+androidx-ui-test-manifest = { group = "androidx.compose.ui", name = "ui-test-manifest" }
+androidx-ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-test-junit4" }
+androidx-material3 = { group = "androidx.compose.material3", name = "material3" }
+coroutine-test = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-test", version.ref = "kotlinCoroutineTest" }
+
+androidx-core = { module = "androidx.test:core", version.ref = "androidxTestCore" }
+androidx-core-testing = { module = "androidx.arch.core:core-testing", version.ref = "coreTesting" }
+androidx-test-orchestrator = { module = "androidx.test:orchestrator", version.ref = "testOrchestrator" }
+androidx-test-rules = { module = "androidx.test:rules", version.ref = "testRules" }
+androidx-test-runner = { module = "androidx.test:runner", version.ref = "testRunner" }
+androidx-test-truth = { module = "androidx.test.ext:truth", version.ref = "testTruth" }
+androidx-ui-test = { group = "androidx.compose.ui", name = "ui-test" }
+androidx-ui-test-junit4-android = { module = "androidx.compose.ui:ui-test-junit4-android" }
+mockito-inline = { module = "org.mockito:mockito-inline", version.ref = "mockitoInline" }
+google-test-truth = { module = "com.google.truth:truth", version.ref = "googleTestTruth" }
+test-espresso-contrib = { module = "androidx.test.espresso:espresso-contrib", version.ref = "espressoVersion" }
+test-espresso-intents = { module = "androidx.test.espresso:espresso-intents", version.ref = "espressoVersion" }
+test-espresso-accessibility = { module = "androidx.test.espresso:espresso-accessibility", version.ref = "espressoVersion" }
+test-idling-concurrent = { module = "androidx.test.espresso.idling:idling-concurrent", version.ref = "espressoVersion" }
+mockito-kotlin = { group = "org.mockito.kotlin", name = "mockito-kotlin", version.ref = "mockitoKotlin" }
+
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+jetbrains-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+screenshot = { id = "com.android.compose.screenshot", version.ref = "screenshot"}
